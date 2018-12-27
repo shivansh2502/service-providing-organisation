@@ -323,3 +323,108 @@ input.txtpname{
   color: white;
   background-color: #3b5998;
 }
+
+#procus1{
+	height: 400px;
+	width: 400px;
+}
+#procus2{
+	height: 400px;
+	width: 400px;
+}
+.procus{
+	color: black;
+}
+
+/*side bar panel*/
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #343a40; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidebar */
+  border-color: black;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: grey;
+}
+.sidebar a.active{
+  background-color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: 0.2s;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: inherit;
+  color: white;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+.openbtn.active{
+  background-color: 
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding-right: 10px;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.profile-img{box-shadow: 0 5px 15px rgba(0,0,0,.5)}
+
+#myprofile{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card.avaservice{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 200px;
+}
+.heading{
+  margin-top: 40px;
+}
+
+

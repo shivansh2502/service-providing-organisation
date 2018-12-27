@@ -8,7 +8,9 @@
 	 <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<!--navbar-->
+<body>
+
+	<!-- Navigation header -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div class="container-fluid">
   	<img src="images/logo.bmp" class="navbar-brand" id="logo">
@@ -18,7 +20,7 @@
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#">Home
                 <span class="sr-only">(current)</span>
               </a>
@@ -32,7 +34,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
         	<a href="login.html">
         	<button type="button" class="btn btn-dark">Login</button>
         </a>
@@ -47,49 +49,40 @@
   </div>
 </nav>
 
-<!--main form-->
+<!--main content-->
 
-<div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-    	<img src="images/login.bmp">
+
+
+
+<div class="container" >
+<div class="row" id="select">
+    <div class="col-lg-12">
+      
     </div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form>
-                <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <label for="inputEmail">Email address</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <label for="inputPassword">Password</label>
-                </div>
-
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Remember password</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
-              </form>
-
-              
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col-lg-6 col-sm-12 text-center mb-4" >
+      <a href="" class="procus">
+        <img class="rounded-circle img-fluid d-block mx-auto" src="images/professional.bmp" alt="" style="width: 400px; height: 400px; margin-top: 50px;">
+        <h3>Sign Up as a Professional</h3>
+      </a>
     </div>
+
+    <div class="col-lg-6 col-sm-12 text-center mb-4" >
+      <a href="" class="procus">
+        <img class="rounded-circle img-fluid d-block mx-auto" src="images/customer.bmp" alt="" style="width: 400px; height: 400px;  margin-top: 50px;">
+        <h3>Sign Up as a Costumer</h3>
+      </a>
+    </div>
+
   </div>
 </div>
 
-<!-- footer-->
+
+
+
+
+
+
+<!-- footer--->
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
         <div  class="container" >
           <div id="foot" class="row row-30">

@@ -8,9 +8,24 @@
 	 <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<!--navbar-->
+<body>
+
+	<!-- Navigation header -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div class="container-fluid">
+  	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="clbtn">&times;</a>
+  <a href="customer.html" >My profile</a>
+  <a href="bookservice.html" class="active">Book a Service</a>
+  <a href="bookedservice.html">Booked Services</a>
+  <a href="cservice.html">Completed Services</a>
+  <a href="#">Settings</a>
+</div>
+
+<div id="main">
+  <button class="openbtn active" onclick="openNav()">&#9776; </button>
+</div>
+
   	<img src="images/logo.bmp" class="navbar-brand" id="logo">
     <h1><a class="navbar-brand" href="index.html" >SERVICE PROVIDING ORGANISATION</a></h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,64 +47,114 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
-        <li class="nav-item active">
-        	<a href="login.html">
-        	<button type="button" class="btn btn-dark">Login</button>
-        </a>
-        </li>
         <li class="nav-item">
-        	<a href="signup.html">
-        	<button type="button" class="btn btn-dark">SignUp</button>
+        	<a href="login.html">
+        	<button type="button" class="btn btn-dark">LogedIn</button>
         </a>
         </li>
+        
       </ul>
     </div>
   </div>
 </nav>
 
-<!--main form-->
 
-<div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-    	<img src="images/login.bmp">
-    </div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form>
-                <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <label for="inputEmail">Email address</label>
-                </div>
 
-                <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <label for="inputPassword">Password</label>
-                </div>
 
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Remember password</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
-              </form>
 
-              
-            </div>
-          </div>
-        </div>
+
+
+
+<!-- main content-->
+<div class="container">
+  <h1 class="heading">SERVICE BOOKING FORM</h1>
+  <hr>
+
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-4">
+      <label for="validationTooltip01"><b>First name</b></label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
       </div>
     </div>
+    <div class="col-md-6 mb-4">
+      <label for="validationTooltip02"><b>Last name</b></label>
+      <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    
   </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationTooltip03"><b>City</b></label>
+      <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip04"><b>State</b></label>
+      <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+      <div class="invalid-tooltip">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationTooltip05"><b>Zip</b></label>
+      <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+      <div class="invalid-tooltip">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <label for="validationTooltip01"><b>Contact No.</b></label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="Contact No." value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <label for="validationTooltip01"><b>Category of Work</b></label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="Like wooden,electric" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <label for="validationTooltip01"><b>Title</b></label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="Title for work" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12 mb-12">
+      <label for="validationTooltip01"><b>Description of Work</b></label>
+      <textarea class="form-control" rows="3" id="validationTooltip01" placeholder="Description of work" value="" required>
+      </textarea>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+
+  </div>
+  <button class="btn btn-primary" type="submit" style="margin-bottom: 30px; margin-top: 30px;">Submit form</button>
+</form>
 </div>
 
-<!-- footer-->
+
+
+
+
+
+
+
+ <!--footer-->
+
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
         <div  class="container" >
           <div id="foot" class="row row-30">
